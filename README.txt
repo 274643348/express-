@@ -1,0 +1,1 @@
+1:git下载后,执行npm I下载相关依赖包;(因为提交git时将node_modules过滤掉了)
