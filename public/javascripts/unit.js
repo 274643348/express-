@@ -1,18 +1,16 @@
-let fs = require("fs");
+let fs = require('fs');
 /**
- * 
- * @param {*} url 
- * @param {*} callback 
+ *
+ * @param {*} url
+ * @param {*} callback
  */
-exports.readFile =  function readFile(url,callback)
-{
+exports.readFile = function readFile(url, callback) {
   console.log(url);
-  fs.readFile(url,(err,data)=>{
+  fs.readFile(url, (err, data) => {
     if (!err) {
-        callback(data);
-    }else
-    {
-        console.log("************err");
+      callback(data);
+    } else {
+      console.log('************err');
     }
   });
-}
+};

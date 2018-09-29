@@ -1,0 +1,39 @@
+{
+  "extends": ["tslint-config-standard", "tslint-config-airbnb", "tslint-config-prettier"],
+  "rules": {
+    "adjacent-overload-signatures": true,
+    // "ban": [true, { "name": ["*", "forEach"], "message": "Use for...of loop instead." }],
+    "max-line-length": [
+      true,
+      {
+        "ignore-pattern": "[`'\"]",
+        "limit": 120
+      }
+    ],
+    "deprecation": true,
+    "member-ordering": false,
+    "ordered-imports": true,
+    "function-name": [
+      true,
+      {
+        "method-regex": "^[a-z][a-zA-Z\\d]+$",
+        "private-method-regex": "^[a-z_][a-zA-Z\\d]+$",
+        "protected-method-regex": "^[a-z][a-zA-Z\\d]+$",
+        "static-method-regex": "^[a-z][a-zA-Z\\d]+$",
+        "function-regex": "^[a-z][a-zA-Z\\d]+$"
+      }
+    ],
+    "import-name": [true, { "axios": "Axios" }],
+    "jsdoc-format": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+    "no-floating-promises": false,
+    "no-for-in-array": true,
+    "no-inferrable-types": [true, "ignore-params", "ignore-properties"],
+    "no-unused-variable": false,
+    "no-use-before-declare": false,
+    "only-arrow-functions": [true, "allow-declarations"],
+    "prefer-template": true,
+    "prefer-switch": true,
+    "prefer-for-of": true
+  }
+}
