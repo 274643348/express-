@@ -10,7 +10,7 @@ exports.readFile = function readFile(url, callback) {
     if (!err) {
       callback(data);
     } else {
-      console.log('************err');
+      console.log('************err' + err);
     }
   });
 };
